@@ -32,8 +32,8 @@ export default {
     background-size: cover;
     position: relative;
     background-position: bottom;
-    height: 90vh;
     color: white;
+    padding-bottom: 100px;
     nav{
         height: 70px;
         background-color: red;

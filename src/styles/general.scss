@@ -23,19 +23,40 @@
 // GENERALS
 .ft-container{
     max-width: 1350px;
+    margin: 0 auto;
 }
 
 h1{
-    font-family: "Marck Script", cursive;
+    font-family: $cursive;
     font-size: 3rem;
 }
 
 h2{
-    font-family: "Playfair Display", serif;
+    font-family: $serif;
     font-weight: 600;
 }
 
-h3{
-    font-family: "Roboto", sans-serif;
+h3,p{
+    font-family: $sans-serif;
     font-weight: 300;
+}
+
+// BUTTONS
+.btn-green,
+.btn-orange{
+    font-family: $sans-serif;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    font-weight: 400;
+    &:hover{
+        cursor: pointer;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.280) 0 0);
+    }
+}
+.btn-orange{
+    background-color: $btn-orange;
+}
+.btn-green{
+    background-color: $btn-green;
 }
