@@ -11,12 +11,25 @@
 @import 'node_modules/@fontsource/roboto/500.css';
 @import 'node_modules/@fontsource/roboto/700.css';
 
+// FONT CURSIVE
+@import 'node_modules/@fontsource/mark-script/index.css';
+
+
 // FONT SERIF
 @import 'node_modules/@fontsource/playfair-display/index.css';
 @import 'node_modules/@fontsource/playfair-display/600.css';
 
 
 // GENERALS
+.ft-container{
+    max-width: 1350px;
+}
+
+h1{
+    font-family: "Marck Script", cursive;
+    font-size: 3rem;
+}
+
 h2{
     font-family: "Playfair Display", serif;
     font-weight: 600;
