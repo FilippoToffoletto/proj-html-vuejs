@@ -1,0 +1,28 @@
+// PALETTE
+@use './partials/variabiles' as *;
+
+
+// BOOTSTRAP
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+
+// FONT SANS SERIF
+@import 'node_modules/@fontsource/roboto/index.css';
+@import 'node_modules/@fontsource/roboto/300.css';
+@import 'node_modules/@fontsource/roboto/500.css';
+@import 'node_modules/@fontsource/roboto/700.css';
+
+// FONT SERIF
+@import 'node_modules/@fontsource/playfair-display/index.css';
+@import 'node_modules/@fontsource/playfair-display/600.css';
+
+
+// GENERALS
+h2{
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+}
+
+h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
