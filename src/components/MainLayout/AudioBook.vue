@@ -1,27 +1,39 @@
 <script>
+import {store} from '../../data/store.js';
 export default {
-    name:'AudioBook'
+    name:'AudioBook',
+    data(){
+        return{
+            store,
+            logosSmall:[
+                {
+                    image:'ebay-logotan-2x-200x66.png'
+                },
+                {
+                    image:'audible-logotan-2x-200x66.png'
+                },
+                {
+                    image:'bb-logotan-2x-200x66.png'
+                },
+                {
+                    image:'kindlefire-logotan-2x-200x66.png'
+                }
+            ]
+        }
+    }
 }
 </script>
 <template>
     <div class="container-full">
         <div class="books-reader container row row-cols-xl-4 py-5 mt-5 d-flex">
-            <div class="col logo">
-                <img src="../../images/ebay-logotan-2x-200x66.png" alt="">
-            </div>
-            <div class="col logo">
-                <img src="../../images/audible-logotan-2x-200x66.png" alt="">
-            </div>
-            <div class="col logo">
-                <img src="../../images/bb-logotan-2x-200x66.png" alt="">
-            </div>
-            <div class="col logo">
-                <img src="../../images/kindlefire-logotan-2x-200x66.png" alt="">
+            <div class="col logo" v-for="logo in logosSmall"  :key="logo.id">
+                <img :src="store.getImageUrl(logo.image)" alt="{{logosSmall.image}}">
             </div>
         </div>
+        
     </div>
     <div class="audiobook">
-            <div class="bg-image container-lg m-auto">
+            <div class="bg-image container-lg m-auto pt-4">
                 <div class="row container-lg m-auto justify-content-between">
                     <div class="left col-12 col-xl-6 pt-5 d-flex justify-content-start">
                     <img src="../../images/audible-app-2x-800x837.png" alt="">
@@ -66,9 +78,6 @@ export default {
 }
 .bg-image{
     background-image: url('../../images/banner.jpg');
-    position: relative;
-    max-width: 100%;
-    background-size: cover;
     color: white;
     img{
         max-width: 80%;
