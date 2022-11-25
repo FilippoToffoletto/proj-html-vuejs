@@ -1,15 +1,18 @@
 <script>
 import AboutMe from './MainLayout/AboutMe.vue';
+import AudioBook from './MainLayout/AudioBook.vue';
 export default {
     name:'AppMain',
     components:{
-        AboutMe
+        AboutMe,
+        AudioBook
     }
 }
 </script>
 <template>
     <main>
         <AboutMe/>
+        <AudioBook/>
     </main>
 </template>
 
