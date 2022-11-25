@@ -1,7 +1,7 @@
 <script>
 import { store } from '../../data/store';
 export default {
-    name:'UpcomingEvents',
+    name:'FindOut',
     data(){
         return{
             store
@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <div class="container-full bg-card-pink">
+    <div class="container-full">
         <div class="ft-container text-center py-5">
             <div class="title">
                 <h2 class="py-3">{{store.events.heading.title}}</h2>
