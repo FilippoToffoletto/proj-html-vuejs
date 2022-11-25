@@ -2,12 +2,14 @@
 import AboutMe from './MainLayout/AboutMe.vue';
 import AudioBook from './MainLayout/AudioBook.vue';
 import Critics from './MainLayout/Critics.vue';
+import UpcomingEvents from './MainLayout/UpcomingEvents.vue';
 export default {
     name:'AppMain',
     components:{
         AboutMe,
         AudioBook,
-        Critics
+        Critics,
+        UpcomingEvents
     }
 }
 </script>
@@ -16,6 +18,7 @@ export default {
         <AboutMe/>
         <AudioBook/>
         <Critics/>
+        <UpcomingEvents/>
     </main>
 </template>
 
