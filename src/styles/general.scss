@@ -34,12 +34,25 @@
     background-size: cover;
 }
 
+.layover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(3, 3, 3, 0.5);
+    border-radius: 0 0 5rem 0;
+}
+
+// TITLES
+
 h1{
     font-family: $cursive;
     font-size: 3rem;
 }
 
-h2{
+h2,
+h5{
     font-family: $serif;
     font-weight: 600;
 }
@@ -69,4 +82,16 @@ p{
 }
 .btn-green{
     background-color: $btn-green;
+}
+
+
+// COLORS
+.text-dark-blue{
+    color:$blue-lagon;
+}
+.caption{
+    color: $suva-grey;
+}
+.bg-card-pink{
+    background-color: $dawn-pink;
 }
