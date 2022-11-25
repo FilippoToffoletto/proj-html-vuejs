@@ -24,6 +24,29 @@ export const store=reactive({
             }
         ]
     },
+    FindOut: {
+        heading: {
+            title: 'Dig A Little Deeper Into Damon Vaughn',
+            subtitle: 'Find out more about the author himself',
+        },
+        cards: [
+            {
+                img: 'box-1.jpg',
+                title: 'About Me',
+                subtitle: 'Lorem ipsum dolor sit amet.'
+            },
+            {
+                img: 'box-4.jpg',
+                title: 'My Latest Book',
+                subtitle: 'Lorem ipsum dolor sit amet.'
+            },
+            {
+                img: 'box-3.jpg',
+                title: 'Book Signing',
+                subtitle: 'Lorem ipsum dolor sit amet.'
+            }
+        ]
+    },
     getImageUrl(name) {
         return new URL(`../images/${name}`, import.meta.url).href
     }

@@ -14,19 +14,19 @@ export default {
     <div class="container-full">
         <div class="ft-container text-center py-5">
             <div class="title">
-                <h2 class="py-3">{{store.events.heading.title}}</h2>
-                <h4 class="text-uppercase">{{store.events.heading.subtitle}}</h4>
+                <h2 class="py-3">{{store.FindOut.heading.title}}</h2>
+                <h4 class="text-uppercase">{{store.FindOut.heading.subtitle}}</h4>
             </div>
-            <div class="row row-cols-3 mt-5">
-                <div class="col-12 col-xl-4 m-0 m-auto"
-                v-for="card in store.events.cards" :key="card">
-                    <div class="">
-                        <img :src="store.getImageUrl(card.img)" alt="" class="w-100">
-                    </div>
-                    <div class="text bg-white px-4 pb-4">
-                        <h3 class="border-bottom py-4">{{card.title}}</h3>
-                        <p>{{card.content}}</p>
-                    </div>
+            <div class="mt-5 col"
+            v-for="card in store.FindOut.cards" :key="card">
+                <div class="col-12 col-xl-4 m-0 m-auto images position-relative">
+                <div class="layover"></div>
+                        <img :src="store.getImageUrl(card.img)" alt="{{store.FindOut.img}}" class="w-100">
+                        <div class="position-relative">
+                            <h3 class="border-bottom py-4">{{card.title}}</h3>
+                            <p>{{card.content}}</p>
+                            <p>{{card.subtitle}}</p>
+                        </div>
                 </div>
             </div>
         </div>
@@ -40,8 +40,16 @@ export default {
 
 .title{
     h4{
-        color: $saffron;
-        letter-spacing: 4px;
+        color: $blue-lagon;
+        font-size: 1.2rem;
+        font-stretch: semi-expanded;
+    }
+}
+.images{
+    object-fit: cover;
+    min-height: 500px;
+    img{
+        object-fit: cover;
     }
 }
 </style>
