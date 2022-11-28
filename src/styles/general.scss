@@ -63,6 +63,16 @@ p{
     font-family: $sans-serif;
     font-weight: 300;
 }
+a{
+    font-style: none;
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    &:hover{
+        color: $saffron;
+        font-weight: 500;
+    }
+}
 
 // BUTTONS
 .btn-green,
