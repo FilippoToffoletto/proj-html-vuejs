@@ -5,6 +5,7 @@ import Critics from './MainLayout/Critics.vue';
 import UpcomingEvents from './MainLayout/UpcomingEvents.vue';
 import AppSubscribe from './MainLayout/AppSubscribe.vue';
 import FindOut from './MainLayout/FindOut.vue';
+import AppArticles from './MainLayout/AppArticles.vue';
 export default {
     name:'AppMain',
     components:{
@@ -13,7 +14,8 @@ export default {
         Critics,
         UpcomingEvents,
         AppSubscribe,
-        FindOut
+        FindOut,
+        AppArticles
     }
 }
 </script>
@@ -25,6 +27,7 @@ export default {
         <UpcomingEvents/>
         <AppSubscribe/>
         <FindOut/>
+        <AppArticles />
     </main>
 </template>
 

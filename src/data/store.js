@@ -47,6 +47,44 @@ export const store=reactive({
             }
         ]
     },
+    articles: {
+        heading: {
+            title: 'Recent Articles',
+            subtitle: 'Read the latest entries',
+            button: 'All Articles'
+        },
+        main_card: {
+            img: '20-Tips-1200x706.jpg',
+            title: '20 Creativity Tips',
+            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae est pariatur quibusdam! Minus quibusdam itaque blanditiis deleniti nostrum ab nulla.',
+            info: {
+                author: 'admin',
+                date: 'October 24th, 2019',
+                categories: 'Event, Tips & Trick',
+                comments: 0,
+            }
+        },
+
+        cards: [
+            {
+                img: 'thumb-13-2x-700x441.jpg',
+                title: 'What\'s On Your Booklist?',
+                info: {
+                    date: 'October 24th, 2019',
+                    comments: 0,
+                }
+            },
+            {
+                img: 'thumb-08-2x-700x441.jpg',
+                title: 'Istanbul Travel Guide',
+                info: {
+                    date: 'October 24th, 2019',
+                    comments: 0,
+                }
+            },
+
+        ]
+    },
     getImageUrl(name) {
         return new URL(`../images/${name}`, import.meta.url).href
     }
