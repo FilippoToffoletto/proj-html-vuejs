@@ -20,7 +20,7 @@ export default {
             <div class="row row-cols-3 mt-5">
                 <div class="col-12 col-xl-4 m-0 m-auto"
                 v-for="card in store.events.cards" :key="card">
-                    <div class="">
+                    <div class="event-img">
                         <img :src="store.getImageUrl(card.img)" alt="" class="w-100">
                     </div>
                     <div class="text bg-white px-4 pb-4">
@@ -42,6 +42,14 @@ export default {
     h4{
         color: $saffron;
         letter-spacing: 4px;
+    }
+}
+.event-img{
+    &:hover{
+        img{
+            opacity: .82;
+            transition: .4s;
+        }
     }
 }
 </style>

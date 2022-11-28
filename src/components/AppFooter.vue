@@ -177,6 +177,9 @@ footer{
     color: $pewter;
     height: auto;
     margin-right: 20px;
+    &:hover{
+      color: $saffron;
+    }
   }
 }
 

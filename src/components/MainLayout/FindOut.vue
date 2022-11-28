@@ -78,6 +78,7 @@ export default {
     }
     &:hover{
         box-shadow: 1px 1px 17px 4px rgba(0,0,0,0.58);
+        transition: .3s;
     }
 }
 </style>
